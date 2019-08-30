@@ -23,6 +23,10 @@ namespace CaesarCipher
                     textQueue.Enqueue((char)(((int)letter + shiftKey - 97)%26 + 97));
                 }
             }
+            else
+            {
+                textQueue.Enqueue(letter);
+            }
                 
             }
             char[] textCharNew = textQueue.ToArray();
